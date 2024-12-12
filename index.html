@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labo 8 - debut du tp2</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="entete" id="entete">
+        <div class="global">
+            <label id="burger" for="chk-burger">
+             <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu-alt-1&color=000" width="32" height="32">
+            </label>   
+            <input type="checkbox"  id="chk-burger">
+            <nav id="menu">
+                <a href="#entete">Accueil</a>
+                <a href="#section-1">Inscriptions</a>
+                <a href="#section-2">Horraire</a>
+                <a href="#section-3">Articles</a>
+                <a href="#section-4">Galerie photos</a>
+                <a href="#section-5">Vidéo</a>
+                <a href="#pied">Footer</a>
+
+            </nav>
+
+            <div id="hero">
+
+            <div id="texte">
+                <h1>
+                   Van Helsing
+                </h1>
+                <p>
+                    Van Helsing de son vrai nom Nacer Ait Amara est un artiste multidisciplinaire de la nouvelle génération, il fait partie du domaine de la musique 
+                    (Rap, Ingénierie sonore, Composition, Production) mais aussi d’autres domaines artistiques comme l’écriture 
+                    (roman, littérature, scénario) la photographie, le design, le dessin et l’illustration, la vidéo
+                    et beaucoup d’autres. Cependant le fil rouge à travers toutes les passions de ce personnage est bien sur le “StoryTelling”. 
+                    En effet Van Helsing à travers les années a réussi à créer son monde et sa propre histoire et donc réuni toute ses 
+                    créations vers une seule direction permettant à la clientèle et au consommateur de créer un lien entre toutes ses œuvres. 
+
+                </p>
+                <p>
+                    Auteur: Nacer Ait Amara
+                </p>
+            </div>
+            <div id="logo">
+            <img id="img-logo" src="images/logo.png" alt="">
+            </div>
+
+            </div>
+           
+        </div>
+    </header>
+    <section id="section-1">
+        <div class="global">
+            <h2>Inscriptions</h2>
+            <p id="inscriptions-p">
+                Veuillez nous indiquer vos suggestions et messages que vous voulez faire passer a l'artiste en les ecrivant ci-dessous :
+            </p>
+            <form action="/ma-page-de-traitement" method="post">
+                <ul>
+                  <li>
+                    <label for="name" class="inscriptions">Nom&nbsp;:</label>
+                    <input type="text" id="name" name="user_name" />
+                  </li>
+                  <li>
+                    <label for="mail" class="inscriptions">E-mail&nbsp;:</label>
+                    <input type="email" id="mail" name="user_mail" />
+                  </li>
+                  <li>
+                    <label for="msg" class="inscriptions">Suggéstions & messages&nbsp;:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                  </li>
+                </ul>
+              </form>
+        </div>        
+    </section>
+    <section id="section-2">
+        <div class="global">
+            <h2>Horraire</h2>
+            <div id="horraire">
+            <table class="tableau">
+                <caption>
+                    Horaire TIM 2024
+                </caption>
+                <!-- première ligne -->
+                 <thead>
+                <tr>
+                    <th></th>
+                    <th>Lundi</th>
+                    <th>Mardi</th>
+                    <th>Mercredi</th>
+                    <th>Jeudi</th>
+                    <th>Vendredi</th>
+                </tr>
+            </thead>
+                <!-- 8h -->
+                <tr>
+                    <th>8h</th>
+                    <td rowspan="2">1W1</td>
+                    <td> Dodo</td>
+                    <td rowspan="2">FR 101</td>
+                    <td rowspan="4">Dodo</td>
+                    <td rowspan="3">Vidéo</td>
+                </tr>
+                <!-- 9h -->
+                <tr>
+                    <th>9h</th>
+                    <td rowspan="3">1W1</td>
+                    
+                </tr>
+                <!-- 10h --> 
+                <tr>
+                    <th>10h</th>
+                    <td rowspan="2">Vidéo</td>
+                    <td rowspan="4">Maison</td>
+                </tr>
+                <!-- 11h -->
+                <tr>
+                    <th>11h</th>
+                    <td rowspan="2">Dispo</td>
+                   
+                </tr> 
+                <!-- 12h -->
+                <tr>
+                    <th>12h</th>
+                    <td rowspan="2">FR 101</td>
+                    <td rowspan="2">Dinner</td>
+                    <td rowspan="2">Dinner</td>
+                </tr> 
+                <!-- 13h -->
+                <tr>
+                    <th>13h</th>
+                    <td rowspan="3">PS</td>
+                   
+                </tr> 
+                <!-- 14h --> 
+                <tr>
+                    <th>14h</th>
+                   <td rowspan="5"></td>
+                   <td rowspan="2">1J1</td>
+                   <td rowspan="3">1J1</td>
+                   <td rowspan="3">PS</td>
+                </tr>
+                <!-- 15h -->
+                <tr>
+                    <th>15h</th>
+                  
+                </tr>
+                <!-- 16h --> 
+                <tr>
+                    <th>16h</th>
+                    <td rowspan="3"></td>
+                    <td rowspan="3"></td>
+                   
+                </tr>
+                <!-- 17h --> 
+                <tr>
+                    <th>17h</th>
+                    <td rowspan="2"></td>
+                    <td rowspan="2"></td>           
+                </tr>
+                <!-- 18h -->
+                 <tr>
+                    <th>18h</th>
+                   
+                 </tr>
+        
+        
+            </table>
+        </div>
+        </div>        
+    </section>
+    <section id="section-3">
+        <div class="global">
+            <h2>Articles</h2>
+        <div id="articles">
+            <div id="colonne-gauche">
+            <article>1v1 #1 est une oeuvre composé par le producteur Appa et est interprété par les artistes Bougelite et Van Helsing. 
+                Il s'agit d'une musique de style rap où les deux artistes font de nombreuses références au jeu "Bloons Tower Defense 6,"
+                aussi connu sous le nom de BTD6.</article>
+            <img src="images/1V1 BTD6 v2.png" alt="">
+            <article>1v1 #2 est une oeuvre composé par le producteur Luma et est interprété par les artistes Bougelite et Van Helsing. 
+                Il s'agit d'une musique de style rap où les deux artistes rap sur le thème de la finesse. Les jeunes rappeurs utilisent 
+                plusieurs définitions associés au terme, tel que l'action de voler. Il font aussi de multiple références au rappeur Rowjay,
+                ancien élève du Cégep de Maisonneuve, aussi connu sous le nom de "Jeune Finesseur." </article>
+            <img src="images/jeune-finesseur_.png" alt="">
+            </div>
+            <div id="colonne-droite">
+            <article>"1v1 #3" est une oeuvre composée par le producteur Akkun et est interprété par les artistes Bougelite et Van Helsing.
+                 Il s'agit d'une musique de style rap où les deux artistes écrive sous le thème lunaire, en utilisant plusieurs expressions,
+                 jeu de mots et références au lexique de la Lune. Par exemple, le manga "Billy Bat" est nommé plusieurs fois dans ce rap. Aussi,
+                 l'artiste Bougelite mèle les expressions "viser la lune" et "tomber dans la lune" pour exprimer le fait qu'il faut toujours
+                 viser plus haut</article>
+            <img src="images/Logo-Lunaire.png" alt="">
+            </div>
+        </div>
+    </div>        
+    </section>
+    <section id="section-4">
+        <div class="global">
+            <h2>Galerie photos</h2>
+            <div id="galerie">
+            <div class="galerie_div">
+              <img src="images/foumelancoliquefinal.png" alt="" class="galerie_img1">
+              <img src="images/TJPUC1.png" alt="" class="galerie_img1">
+              <img src="images/TJPUC2v2.png" alt="" class="galerie_img1">
+              <img src="images/TJPUC3.png" alt="" class="galerie_img1">
+            </div>
+            <figure class="galerie_div">
+                <img src="images/watchmencover2.png" alt="" class="galerie_img2">
+                <img src="images/Anti-Vampires.png" alt="" class="galerie_img2">
+                <img src="images/jeune-finesseur_.png" alt="" class="galerie_img2">
+                <img src="images/Logo-Lunaire.png" alt="" class="galerie_img2">
+                <img src="images/1V1 BTD6 v2.png" alt="" class="galerie_img2">
+
+            </figure>
+         </div>
+        </div>        
+    </section>
+    <section id="section-5">
+        <div class="global">
+            <h2>Vidéo</h2>
+            <div id="video">
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/IyQ-26EPh1Q?si=3DzXyqsq3GuFzmI5" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>        
+    </section>
+<footer>
+    <div class="footer-global" id="pied">
+        <div id="liens-icons">
+            <a href="https://www.youtube.com/channel/UC5ksG78ReM6Klbug9op4yqw">YouTube</a>
+            <img src="https://s2.svgbox.net/social.svg?ic=youtube&color=000000" width="32" height="32">
+            <a href="https://open.spotify.com/artist/0rToCHscFh50NJb3LGNbNV?si=1qY1oTUaTBmXQUnGng-leQ">Spotify</a>
+            <img src="https://s2.svgbox.net/social.svg?ic=spotify&color=000000" width="32" height="32">
+            <a href="https://music.apple.com/us/artist/van-helsing/1769550510">Apple music</a>
+            <img src="https://s2.svgbox.net/social.svg?ic=applemusic&color=000000" width="32" height="32">
+        </div>
+     <div id="sous-titre">
+                <p>Département de techniques d'intégration multimédia - Collège de Maisonneuve - 3800 Sherbrooke Est, Montréal <br>
+                    <a href="https://www.cmaisonneuve.qc.ca/regles-de-confidentialite/">Avis de confidentialité | Privacy Notice</a>
+                </p>
+            </div>
+    </div>
+</footer>
+   
+</body>
+</html>
